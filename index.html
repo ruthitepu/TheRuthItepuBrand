@@ -1,180 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruth Itepu – Entrepreneur, CEO & Founder</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-brown': '#8B4513',
-                        'brand-gold': '#DAA520',
-                        'brand-beige': '#F5F5DC',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ruth Itepu Brand</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #17666E;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+    h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: 2rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .links {
+      margin: 2rem 0;
+    }
+    .links a {
+      display: block;
+      margin: 0.5rem auto;
+      padding: 0.8rem 1rem;
+      max-width: 300px;
+      text-decoration: none;
+      border-radius: 8px;
+      background: #DCF4F6;
+      color: #17666E;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .links a:hover {
+      background: #17666E;
+      color: white;
+    }
+    footer {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-800 bg-white">
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="text-2xl font-serif text-brand-brown">Ruth Itepu</div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-brand-gold">About</a>
-                <a href="#ventures" class="hover:text-brand-gold">Ventures</a>
-                <a href="#ceo-diary" class="hover:text-brand-gold">CEO Diary</a>
-                <a href="#contact" class="hover:text-brand-gold">Contact</a>
-            </div>
-            <button class="md:hidden text-brand-brown" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-            <a href="#about" class="block px-6 py-3 hover:bg-brand-beige">About</a>
-            <a href="#ventures" class="block px-6 py-3 hover:bg-brand-beige">Ventures</a>
-            <a href="#ceo-diary" class="block px-6 py-3 hover:bg-brand-beige">CEO Diary</a>
-            <a href="#contact" class="block px-6 py-3 hover:bg-brand-beige">Contact</a>
-        </div>
-    </nav>
+<body>
+  <header>
+    <img src="./assets/ruth.png" alt="Ruth Itepu" />
+    <h1>The Ruth Itepu Brand</h1>
+    <p>Digital Marketing | Entrepreneurship</p>
+  </header>
 
-    <!-- Hero -->
-    <section class="h-screen flex items-center justify-center bg-brand-beige px-6 text-center">
-        <div>
-            <h1 class="text-4xl md:text-6xl font-serif text-brand-brown mb-6">Ruth Itepu</h1>
-            <p class="text-lg md:text-xl mb-6">Entrepreneur • CEO • Founder of multiple thriving ventures</p>
-            <p class="text-lg text-gray-600">Building businesses and creating impact-driven solutions across Africa and beyond.</p>
-        </div>
-    </section>
+  <div class="links">
+    <a href="https://substack.com/@ruthitepu" target="_blank">📩 Newsletter (Substack)</a>
+    <a href="https://selar.co/m/RuthItepu" target="_blank">🛒 Shop on Selar</a>
+    <a href="https://www.instagram.com/ruth_itepu" target="_blank">📸 Instagram</a>
+    <a href="https://www.linkedin.com/in/ruthitepu" target="_blank">💼 LinkedIn</a>
+    <a href="https://www.tiktok.com/@ruth_itepu" target="_blank">🎥 TikTok</a>
+    <a href="https://calendly.com/ruthitepu" target="_blank">📅 Book a Call</a>
+  </div>
 
-    <!-- About -->
-    <section id="about" class="py-20 px-6 bg-white max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <img src="./assets/ruth-profile.jpg" alt="Ruth Itepu" class="rounded-lg shadow-lg">
-            <div>
-                <h2 class="text-3xl font-serif text-brand-brown mb-4">About Me</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    I am Ruth Itepu, a passionate entrepreneur and leader, shaping businesses that combine innovation, sustainability, and impact.
-                    Through my ventures, I aim to inspire transformation across industries while empowering people to live better, more fulfilled lives.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ventures -->
-    <section id="ventures" class="py-20 bg-brand-beige px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-serif text-brand-brown text-center mb-12">My Ventures</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-                    <h3 class="font-serif text-xl text-brand-brown mb-4">Envisage Cleaning Services</h3>
-                    <p>Professional cleaning solutions for homes, offices, and Airbnbs across Nigeria, blending innovation with exceptional service delivery.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-                    <h3 class="font-serif text-xl text-brand-brown mb-4">Envisage Suds</h3>
-                    <p>A soap-making venture dedicated to providing high-quality, skin-friendly products while promoting local manufacturing and sustainability.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-                    <h3 class="font-serif text-xl text-brand-brown mb-4">Homevy Furnishings & Rentals</h3>
-                    <p>Luxury home décor, furnishings, and real estate solutions, including rentals of houses, apartments, and cars for modern lifestyles.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CEO Diary -->
-    <section id="ceo-diary" class="py-20 px-6 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-serif text-brand-brown mb-6">The CEO Diary</h2>
-            <p class="mb-6 text-gray-700">A newsletter sharing authentic entrepreneurial insights, strategies, and real-life lessons to inspire and empower other entrepreneurs.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <input type="email" placeholder="Enter your email" class="px-4 py-3 border rounded-lg w-full sm:w-2/3 focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                <button onclick="subscribeNewsletter()" class="bg-brand-gold text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
-                    Subscribe Now
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-20 bg-brand-beige px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-serif text-brand-brown mb-6">Get In Touch</h2>
-            <p class="mb-6 text-gray-700">For partnerships, collaborations, or inquiries, feel free to reach out.</p>
-            <a href="mailto:ruthitepu@gmail.com" class="inline-block bg-brand-brown text-white px-8 py-4 rounded-lg hover:bg-brand-gold transition">Email Me</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-6 bg-white text-center text-gray-600 border-t">
-        <p>© <span id="year"></span> Ruth Itepu. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-
-        function subscribeNewsletter() {
-            const emailInput = document.querySelector('input[type="email"]');
-            const subscribeButton = document.querySelector('button[onclick="subscribeNewsletter()"]');
-            const email = emailInput.value.trim();
-            
-            if (email && email.includes('@')) {
-                subscribeButton.textContent = 'Subscribing...';
-                subscribeButton.disabled = true;
-                setTimeout(() => {
-                    subscribeButton.textContent = 'Subscribed ✓';
-                    subscribeButton.classList.remove('bg-brand-gold', 'hover:bg-yellow-600');
-                    subscribeButton.classList.add('bg-green-600');
-                    emailInput.value = '';
-                    window.open('https://open.substack.com/pub/theceodiary?r=2amht5&utm_medium=ios', '_blank');
-                    setTimeout(() => {
-                        subscribeButton.textContent = 'Subscribe Now';
-                        subscribeButton.disabled = false;
-                        subscribeButton.classList.remove('bg-green-600');
-                        subscribeButton.classList.add('bg-brand-gold', 'hover:bg-yellow-600');
-                    }, 3000);
-                }, 1000);
-            } else {
-                alert('Please enter a valid email address to subscribe.');
-            }
-        }
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
-
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+  <footer>
+    <p>© 2025 The Ruth Itepu Brand. All rights reserved.</p>
+  </footer>
 </body>
 </html>
